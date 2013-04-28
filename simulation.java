@@ -11,12 +11,17 @@ import java.util.Scanner;
  * @author tdang
  */
 public class simulation {
+    //Number of stations
     public static int N = 5;
+    //number of runs
+    public static int RUNCOUNT = 100;
+    
     station[] S = new station[N];
     
     public int run(int N) {
         int time = 0;
         int i;
+        //Initialize 
         for (i=0;i<N;i++) {
             S[i].reset();
         }
@@ -42,7 +47,6 @@ public class simulation {
             }
         }
     }
-    public static int RUNCOUNT = 100;
     
     public static void main(String argv[]) {
         simulation S = new simulation();

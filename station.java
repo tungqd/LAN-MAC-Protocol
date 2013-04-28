@@ -26,7 +26,9 @@ public class station {
     }
     private static int backoff(int k) {
         Random rand = new Random();
-        return rand.nextInt(k);
+        int n = k;
+        int delayVal = rand.nextInt((int) (Math.pow(2, n))-1);
+        return delayVal;
         
     }
     

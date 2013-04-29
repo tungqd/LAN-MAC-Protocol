@@ -14,6 +14,10 @@ public class station {
     private int nextAttempt;
     private int collisionCount;
     
+    public station() {
+        nextAttempt = 0;
+        collisionCount = 0;
+    }
     public void reset() {
         nextAttempt = collisionCount = 0;
     }
